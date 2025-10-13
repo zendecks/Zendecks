@@ -1,0 +1,56 @@
+.projeto {
+  width: 320px;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  transition: all 0.3s ease;
+}
+
+.midia-container {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.imagem-projeto,
+.video-preview {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.4s ease;
+}
+
+.video-preview {
+  opacity: 0;
+  z-index: 1;
+}
+
+.projeto .descricao {
+  opacity: 0;
+  max-height: 0;
+  transition: opacity 0.4s ease, max-height 0.4s ease;
+  overflow: hidden;
+  font-size: 14px;
+  margin-top: 10px;
+  color: #444;
+}
+
+/* HOVER EFFECTS */
+.projeto:hover .imagem-projeto {
+  opacity: 0;
+}
+
+.projeto:hover .video-preview {
+  opacity: 1;
+  z-index: 2;
+}
+
+.projeto:hover .descricao {
+  opacity: 1;
+  max-height: 200px;
+}

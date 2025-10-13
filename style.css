@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: titulos;
+    src: url(../fontes/Fontspring-DEMO-theseasons-reg.otf) format(opentype);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: japones;
+    src: url(../fontes/NotoSerifJP-VariableFont_wght.ttf) format(truetype);
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: especial;
+    src: url(../fontes/Michroma-Regular.ttf);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor0: #000000;
+    --cor1: #3533cd;
+    --cor2: #2D2C5E;
+    --cor3: #B9B9DE;
+
+    --titulos: 'titulos',verdana, sans-serif;
+    --japones: 'japones', arial, sans-serif;
+    --especial: 'especial', arial, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+    color:White;
+}
+
+header{
+    font-size: 1.4em;
+    margin: 20px 50px 0 50px;
+    font-family: var(--especial);
+}
+
+nav{
+    margin-left: 30px;
+    padding: 15px;
+    font-size: 1.2em;    
+}
+
+nav > a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    margin-right: 15px;
+}
+
+nav > a:hover{
+    background-color: #2D2C5E;
+    color: #B9B9DE;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #00000075;
+}
+
+main{
+    background-color: #ffffff;
+    padding-top: 3px;
+}
+
+article{
+    background-image: linear-gradient(to right, var(--cor0), var(--cor1));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+span{
+    display: inline-block;
+    text-align: left;
+}
+
+
+h1#ele{
+    margin: 0px 15px 15px 15px;
+    font-size: 2em;
+    font-family: var(--especial);
+}
+
+h2#especial{
+    margin-left: 15px;
+    font-family: var(--titulos);
+}
+
+h2#poi{
+    margin-left: 15px;
+    font-size: 2em;
+    font-family: var(--japones);
+}
+
+img{
+    border-radius: 50%;
+    width: 33%;
+    height: 33%;
+    margin-right: 50px;
+    box-shadow: 5px 5px 5px 5px #0000009c;
+}
+
+
+footer{
+    margin: 20px;
+    margin-top: 50px;
+    text-align: left;
+    font-family: var(--especial);
+}
