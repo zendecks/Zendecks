@@ -91,19 +91,20 @@ h1#redes{
     font-family: var(--especial);
 }
 img{
-    width: 10%;
+    width: 80px;
 }
 
 .diferente{
-    margin: 0 40px 0 40px;
+    margin: 0 30px 0 30px;
 }
 
 a > img{
     transition-duration: 0.5s;
     margin-right: 15px;
 }
+
 a > img:hover{
-    width: 120px;
+    width: 90px;
     border-radius: 10px;
 }
 
